@@ -13,9 +13,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #fddde6
+            background-color: #fddde6;
+        }
+
+        :root {
+            --dark-blue: #FF69B4;
+            --light-green: ##FF69B4;
+            --yellow: #fddde6;
+            --orange: #fddde6;
+            --salmon: ##FF69B4;
+        }
+
+        .container {
+            color: var(--dark-blue);
+            font-size: 20px;
+            font-weight: bold;
+            min-height: 100vh;
+            background-color: var(--yellow);
+        }
+
+        .row {
+            border: 1px solid var(--dark-blue);
+            min-height: 50px;
+        }
+
+        [class^="col"] {
+            border: 1px solid var(--light-green);
+            min-height: 50px;
         }
     </style>
+
 </head>
 
 <body>
@@ -40,6 +67,46 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">My Websites</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">text:</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <img src="" class="img-fluid" alt="fluid image">
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-12">text</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">text:</div>
+
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <img src="" class="img-fluid" alt="Fluid image">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">text</div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">text:</div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <img src="" class="img-fluid" alt="Fluid image">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">text</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">text:</div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <img src="" class="img-fluid" alt="Fluid image" width="400" height="400">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                text
+            </div>
+        </div>
+        
+    </div>
 </body>
 
 </html>
